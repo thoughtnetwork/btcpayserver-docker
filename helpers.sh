@@ -7,6 +7,7 @@ install_tooling() {
                 "btcpayserver_bitcored" "bitcore-cli.sh" "Command line for your Bitcore instance" \
                 "btcpayserver_bitcoinplusd" "bplus-cli.sh" "Command line for your BPlus instance" \
                 "btcpayserver_dashd" "dash-cli.sh" "Command line for your Dash instance" \
+                "btcpayserver_thoughtd" "thought-cli.sh" "Command line for your Dash instance" \
                 "btcpayserver_dogecoind" "dogecoin-cli.sh" "Command line for your Dogecoin instance" \
                 "btcpayserver_feathercoind" "feathercoin-cli.sh" "Command line for your Feathercoin instance" \
                 "btcpayserver_groestlcoind" "groestlcoin-cli.sh" "Command line for your Groestlcoin instance" \
@@ -52,9 +53,9 @@ install_tooling() {
 btcpay_expand_variables() {
     BTCPAY_CRYPTOS=""
     for i in "$BTCPAYGEN_CRYPTO1" "$BTCPAYGEN_CRYPTO2" "$BTCPAYGEN_CRYPTO3" "$BTCPAYGEN_CRYPTO4" "$BTCPAYGEN_CRYPTO5" "$BTCPAYGEN_CRYPTO5" "$BTCPAYGEN_CRYPTO6" "$BTCPAYGEN_CRYPTO7" "$BTCPAYGEN_CRYPTO8"
-    do  
-        if [ ! -z "$i" ]; then 
-            if [ ! -z "$BTCPAY_CRYPTOS" ]; then 
+    do
+        if [ ! -z "$i" ]; then
+            if [ ! -z "$BTCPAY_CRYPTOS" ]; then
                 BTCPAY_CRYPTOS="$BTCPAY_CRYPTOS;"
             fi
             BTCPAY_CRYPTOS="$BTCPAY_CRYPTOS$i"

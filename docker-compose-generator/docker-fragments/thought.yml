@@ -1,0 +1,31 @@
+version: "3"
+
+services:
+  thoughtd:
+      restart: unless-stopped
+      container_name: btcpayserver_thoughtd
+      image: btcpayserver/thought:0.18.0
+      environment:
+        BITCOIN_EXTRA_ARGS: |
+          ${NBITCOIN_NETWORK:-regtest}=1
+          port=10618
+          rpcport=10617
+          whitelist=0.0.0.0/0
+      expose:
+        - "10617"
+        - "10618"
+      volumes:
+        - "thought_datadir:/data"
+  nbxplorer:
+      environment:
+        NBXPLORER_CHAINS: "thought"
+        NBXPLORER_THOUGHTRPCURL: http://thoughtd:10617/
+        NBXPLORER_THOUGHTNODEENDPOINT: thoughtd:10618
+      volumes:
+        - "thought_datadir:/root/.thoughtcore"
+  btcpayserver:
+      environment:
+        BTCPAY_CHAINS: "tht"
+        BTCPAY_THOUGHTEXPLORERURL: http://nbxplorer:32838/
+volumes:
+  thought_datadir:
