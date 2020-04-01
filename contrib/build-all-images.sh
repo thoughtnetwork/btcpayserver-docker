@@ -459,7 +459,7 @@ DOCKERFILE="Dockerfile.linuxamd64"
 # https://raw.githubusercontent.com/dgarage/nbxplorer/v2.1.14/Dockerfile.linuxarm64v8
 [[ "$(uname -m)" == "aarch64" ]] && DOCKERFILE="Dockerfile.linuxarm64v8"
 echo "Building nicolasdorier/nbxplorer:2.1.14"
-git clone https://github.com/dgarage/nbxplorer nbxplorer
+git clone https://github.com/thoughtnetwork/nbxplorer nbxplorer
 cd nbxplorer
 git checkout v2.1.14
 cd "$(dirname $DOCKERFILE)"
