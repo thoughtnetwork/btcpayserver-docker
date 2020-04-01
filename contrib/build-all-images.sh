@@ -13,7 +13,7 @@ DOCKERFILE="docker-compose-generator/linuxamd64.Dockerfile"
 # https://raw.githubusercontent.com/btcpayserver/btcpayserver-docker/dcg-latest/docker-compose-generator/linuxarm64v8.Dockerfile
 [[ "$(uname -m)" == "aarch64" ]] && DOCKERFILE="docker-compose-generator/linuxarm64v8.Dockerfile"
 echo "Building btcpayserver/docker-compose-generator:latest"
-git clone https://github.com/btcpayserver/btcpayserver-docker docker-compose-generator
+git clone https://github.com/thoughtnetwork/btcpayserver-docker docker-compose-generator
 cd docker-compose-generator
 git checkout dcg-latest
 cd "$(dirname $DOCKERFILE)"
@@ -233,7 +233,7 @@ DOCKERFILE="amd64.Dockerfile"
 # https://raw.githubusercontent.com/btcpayserver/btcpayserver/v1.0.3.164/arm64v8.Dockerfile
 [[ "$(uname -m)" == "aarch64" ]] && DOCKERFILE="arm64v8.Dockerfile"
 echo "Building btcpayserver/btcpayserver:1.0.3.164"
-git clone https://github.com/btcpayserver/btcpayserver btcpayserver
+git clone https://github.com/thoughtnetwork/btcpayserver btcpayserver
 cd btcpayserver
 git checkout v1.0.3.164
 cd "$(dirname $DOCKERFILE)"
@@ -563,7 +563,7 @@ DOCKERFILE="Dockerfiles/amd64.Dockerfile"
 # https://raw.githubusercontent.com/btcpayserver/btcpayserver-configurator/v0.0.19/Dockerfiles/arm64v8.Dockerfile
 [[ "$(uname -m)" == "aarch64" ]] && DOCKERFILE="Dockerfiles/arm64v8.Dockerfile"
 echo "Building btcpayserver/btcpayserver-configurator:0.0.19"
-git clone https://github.com/btcpayserver/btcpayserver-configurator btcpayserver-configurator
+git clone https://github.com/thoughtnetwork/btcpayserver-configurator btcpayserver-configurator
 cd btcpayserver-configurator
 git checkout v0.0.19
 cd "$(dirname $DOCKERFILE)"

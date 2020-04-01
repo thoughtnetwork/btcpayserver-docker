@@ -5,14 +5,14 @@ BTCPay Server deployment using NGinx are typically composed of:
 
 1. One full node per supported cryptocurrency (bitcoind/litecoind)
 2. A lightweight block explorer ([NBxplorer](https://github.com/dgarage/NBXplorer))
-3. A [BTCPay Server](https://github.com/btcpayserver/btcpayserver)
+3. A [BTCPay Server](https://github.com/thoughtnetwork/btcpayserver)
 4. A database (Postgres)
 5. A reverse proxy (NGINX)
 6. Two containers configuring NGINX as a reverse proxy and renewing SSL certificates.
 
 ![Architecture](Production.png)
 
-[The Deploy on Azure Button](https://github.com/btcpayserver/btcpayserver-azure) is using this `docker-compose` under the hood on an Ubuntu machine. You can use it on any docker supporting host.
+[The Deploy on Azure Button](https://github.com/thoughtnetwork/btcpayserver-azure) is using this `docker-compose` under the hood on an Ubuntu machine. You can use it on any docker supporting host.
 
 The relevant environment variables are:
 

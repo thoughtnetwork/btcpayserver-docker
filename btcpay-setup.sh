@@ -3,7 +3,7 @@
 set +x
 
 if [[ "$0" = "$BASH_SOURCE" ]]; then
-    echo "This script must be sourced \". btcpay-setup.sh\"" 
+    echo "This script must be sourced \". btcpay-setup.sh\""
     exit 1
 fi
 
@@ -169,18 +169,18 @@ if [[ -z "$BTCPAYGEN_CRYPTO1" ]]; then
     fi
 fi
 
-if [ ! -z "$BTCPAY_ADDITIONAL_HOSTS" ] && [[ "$BTCPAY_ADDITIONAL_HOSTS" == *[';']* ]]; then 
+if [ ! -z "$BTCPAY_ADDITIONAL_HOSTS" ] && [[ "$BTCPAY_ADDITIONAL_HOSTS" == *[';']* ]]; then
     echo "$BTCPAY_ADDITIONAL_HOSTS should be separated by a , not ;"
     return;
 fi
 
-if [ ! -z "$BTCPAY_ADDITIONAL_HOSTS" ] && [[ "$BTCPAY_ADDITIONAL_HOSTS" == .onion* ]]; then 
+if [ ! -z "$BTCPAY_ADDITIONAL_HOSTS" ] && [[ "$BTCPAY_ADDITIONAL_HOSTS" == .onion* ]]; then
     echo "$BTCPAY_ADDITIONAL_HOSTS should not contains onion hosts, additional hosts is only for getting https certificates, those are not available to tor addresses"
     return;
 fi
 ######### Migration: old pregen environment to new environment ############
 if [[ ! -z $BTCPAY_DOCKER_COMPOSE ]] && [[ ! -z $DOWNLOAD_ROOT ]] && [[ -z $BTCPAYGEN_OLD_PREGEN ]]; then
-    echo "Your deployment is too old, you need to migrate by following instructions on this link https://github.com/btcpayserver/btcpayserver-docker/tree/master#i-deployed-before-btcpay-setupsh-existed-before-may-17-can-i-migrate-to-this-new-system"
+    echo "Your deployment is too old, you need to migrate by following instructions on this link https://github.com/thoughtnetwork/btcpayserver-docker/tree/master#i-deployed-before-btcpay-setupsh-existed-before-may-17-can-i-migrate-to-this-new-system"
     return
 fi
 #########################################################
@@ -389,7 +389,7 @@ if ! [[ -x "$(command -v docker)" ]] || ! [[ -x "$(command -v docker-compose)" ]
     if ! [[ -x "$(command -v docker)" ]]; then
         if [[ "$(uname -m)" == "x86_64" ]] || [[ "$(uname -m)" == "armv7l" ]] || [[ "$(uname -m)" == "aarch64" ]]; then
             if [[ "$OSTYPE" == "darwin"* ]]; then
-                # Mac OS	
+                # Mac OS
                 if ! [[ -x "$(command -v brew)" ]]; then
                     # Brew is not installed, install it now
                     echo "Homebrew, the package manager for Mac OS, is not installed. Installing it now..."

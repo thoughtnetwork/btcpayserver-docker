@@ -1,6 +1,6 @@
 # How to use docker-compose without reverse proxy
 
-![Architecture](https://github.com/btcpayserver/btcpayserver-doc/raw/master/img/Architecture.png)
+![Architecture](https://github.com/thoughtnetwork/btcpayserver-doc/raw/master/img/Architecture.png)
 
 This is the same architecture as [Production](../Production) but without NGINX as a reverse proxy.
 It is suited for environment which already expose the host behind a reverse proxy handling HTTPS.
