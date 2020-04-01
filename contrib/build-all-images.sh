@@ -193,7 +193,7 @@ DOCKERFILE="Bitcoin/0.19.0.1/linuxamd64.Dockerfile"
 # https://raw.githubusercontent.com/btcpayserver/dockerfile-deps/Bitcoin/0.19.0.1/Bitcoin/0.19.0.1/linuxarm64v8.Dockerfile
 [[ "$(uname -m)" == "aarch64" ]] && DOCKERFILE="Bitcoin/0.19.0.1/linuxarm64v8.Dockerfile"
 echo "Building btcpayserver/bitcoin:0.19.0.1"
-git clone https://github.com/btcpayserver/dockerfile-deps bitcoin
+git clone https://github.com/thoughtnetwork/dockerfile-deps bitcoin
 cd bitcoin
 git checkout Bitcoin/0.19.0.1
 cd "$(dirname $DOCKERFILE)"
@@ -249,7 +249,7 @@ DOCKERFILE="Dash/0.14.0.1/linuxamd64.Dockerfile"
 # https://raw.githubusercontent.com/btcpayserver/dockerfile-deps/Dash/0.14.0.1/Dash/0.14.0.1/linuxarm64v8.Dockerfile
 [[ "$(uname -m)" == "aarch64" ]] && DOCKERFILE="Dash/0.14.0.1/linuxarm64v8.Dockerfile"
 echo "Building btcpayserver/dash:0.14.0.1"
-git clone https://github.com/btcpayserver/dockerfile-deps dash
+git clone https://github.com/thoughtnetwork/dockerfile-deps dash
 cd dash
 git checkout Dash/0.14.0.1
 cd "$(dirname $DOCKERFILE)"
@@ -361,7 +361,7 @@ DOCKERFILE="Elements/0.18.1.1/linuxamd64.Dockerfile"
 # https://raw.githubusercontent.com/btcpayserver/dockerfile-deps/Elements/0.18.1.1-1/Elements/0.18.1.1/linuxarm64v8.Dockerfile
 [[ "$(uname -m)" == "aarch64" ]] && DOCKERFILE="Elements/0.18.1.1/linuxarm64v8.Dockerfile"
 echo "Building btcpayserver/elements:0.18.1.1-1"
-git clone https://github.com/btcpayserver/dockerfile-deps elements
+git clone https://github.com/thoughtnetwork/dockerfile-deps elements
 cd elements
 git checkout Elements/0.18.1.1-1
 cd "$(dirname $DOCKERFILE)"
@@ -407,7 +407,7 @@ DOCKERFILE="Litecoin/0.17.1/linuxamd64.Dockerfile"
 # https://raw.githubusercontent.com/btcpayserver/dockerfile-deps/Litecoin/0.17.1-1/Litecoin/0.17.1/linuxarm32v7.Dockerfile
 [[ "$(uname -m)" == "armv7l" ]] && DOCKERFILE="Litecoin/0.17.1/linuxarm32v7.Dockerfile"
 echo "Building btcpayserver/litecoin:0.17.1-1"
-git clone https://github.com/btcpayserver/dockerfile-deps litecoin
+git clone https://github.com/thoughtnetwork/dockerfile-deps litecoin
 cd litecoin
 git checkout Litecoin/0.17.1-1
 cd "$(dirname $DOCKERFILE)"
@@ -579,7 +579,7 @@ DOCKERFILE="EPS/0.2.0/linuxamd64.Dockerfile"
 # https://raw.githubusercontent.com/btcpayserver/dockerfile-deps/EPS/0.2.0/EPS/0.2.0/linuxarm64v8.Dockerfile
 [[ "$(uname -m)" == "aarch64" ]] && DOCKERFILE="EPS/0.2.0/linuxarm64v8.Dockerfile"
 echo "Building btcpayserver/eps:0.2.0"
-git clone https://github.com/btcpayserver/dockerfile-deps eps
+git clone https://github.com/thoughtnetwork/dockerfile-deps eps
 cd eps
 git checkout EPS/0.2.0
 cd "$(dirname $DOCKERFILE)"
@@ -663,7 +663,7 @@ DOCKERFILE="Tor/0.4.1.5/linuxamd64.Dockerfile"
 # https://raw.githubusercontent.com/btcpayserver/dockerfile-deps/Tor/0.4.1.5/Tor/0.4.1.5/linuxarm64v8.Dockerfile
 [[ "$(uname -m)" == "aarch64" ]] && DOCKERFILE="Tor/0.4.1.5/linuxarm64v8.Dockerfile"
 echo "Building btcpayserver/tor:0.4.1.5"
-git clone https://github.com/btcpayserver/dockerfile-deps tor
+git clone https://github.com/thoughtnetwork/dockerfile-deps tor
 cd tor
 git checkout Tor/0.4.1.5
 cd "$(dirname $DOCKERFILE)"
@@ -679,7 +679,7 @@ DOCKERFILE="Tor/0.4.1.5/linuxamd64.Dockerfile"
 # https://raw.githubusercontent.com/btcpayserver/dockerfile-deps/Tor/0.4.1.5/Tor/0.4.1.5/linuxarm64v8.Dockerfile
 [[ "$(uname -m)" == "aarch64" ]] && DOCKERFILE="Tor/0.4.1.5/linuxarm64v8.Dockerfile"
 echo "Building btcpayserver/tor:0.4.1.5"
-git clone https://github.com/btcpayserver/dockerfile-deps tor
+git clone https://github.com/thoughtnetwork/dockerfile-deps tor
 cd tor
 git checkout Tor/0.4.1.5
 cd "$(dirname $DOCKERFILE)"
@@ -786,7 +786,7 @@ DOCKERFILE="Thought/0.18.0/linuxamd64.Dockerfile"
 # https://raw.githubusercontent.com/btcpayserver/dockerfile-deps/Thought/0.18.0/Thought/0.18.0/linuxarm64v8.Dockerfile
 [[ "$(uname -m)" == "aarch64" ]] && DOCKERFILE="Thought/0.18.0/linuxarm64v8.Dockerfile"
 echo "Building btcpayserver/thought:0.18.0"
-git clone https://github.com/btcpayserver/dockerfile-deps thought
+git clone https://github.com/thoughtnetwork/dockerfile-deps thought
 cd thought
 git checkout Thought/0.18.0
 cd "$(dirname $DOCKERFILE)"

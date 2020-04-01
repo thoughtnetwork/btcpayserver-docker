@@ -244,7 +244,7 @@ namespace DockerFileBuildHelper
                     dockerInfo.DockerFilePath = $"EPS/{NoRevision(image.Tag)}/linuxamd64.Dockerfile";
                     dockerInfo.DockerFilePathARM32v7 = $"EPS/{NoRevision(image.Tag)}/linuxarm32v7.Dockerfile";
                     dockerInfo.DockerFilePathARM64v8 = $"EPS/{NoRevision(image.Tag)}/linuxarm64v8.Dockerfile";
-                    dockerInfo.GitLink = "https://github.com/btcpayserver/dockerfile-deps";
+                    dockerInfo.GitLink = "https://github.com/thoughtnetwork/dockerfile-deps";
                     dockerInfo.GitRef = $"EPS/{image.Tag}";
                     dockerInfo.SupportedByUs = true;
                     break;
@@ -375,7 +375,7 @@ namespace DockerFileBuildHelper
                     dockerInfo.DockerFilePath = $"Bitcoin/{tagNoRevision}/linuxamd64.Dockerfile";
                     dockerInfo.DockerFilePathARM32v7 = $"Bitcoin/{tagNoRevision}/linuxarm32v7.Dockerfile";
                     dockerInfo.DockerFilePathARM64v8 = $"Bitcoin/{tagNoRevision}/linuxarm64v8.Dockerfile";
-                    dockerInfo.GitLink = "https://github.com/btcpayserver/dockerfile-deps";
+                    dockerInfo.GitLink = "https://github.com/thoughtnetwork/dockerfile-deps";
                     dockerInfo.GitRef = $"Bitcoin/{image.Tag}";
                     dockerInfo.SupportedByUs = true;
                     break;
@@ -386,7 +386,7 @@ namespace DockerFileBuildHelper
                     dockerInfo.DockerFilePath = $"Elements/{tagNoRevision}/linuxamd64.Dockerfile";
                     dockerInfo.DockerFilePathARM32v7 = $"Elements/{tagNoRevision}/linuxarm32v7.Dockerfile";
                     dockerInfo.DockerFilePathARM64v8 = $"Elements/{tagNoRevision}/linuxarm64v8.Dockerfile";
-                    dockerInfo.GitLink = "https://github.com/btcpayserver/dockerfile-deps";
+                    dockerInfo.GitLink = "https://github.com/thoughtnetwork/dockerfile-deps";
                     dockerInfo.GitRef = $"Elements/{image.Tag}";
                     break;
                 }
@@ -394,7 +394,7 @@ namespace DockerFileBuildHelper
                     dockerInfo.DockerFilePath = $"Tor/{image.Tag}/linuxamd64.Dockerfile";
                     dockerInfo.DockerFilePathARM32v7 = $"Tor/{image.Tag}/linuxarm32v7.Dockerfile";
                     dockerInfo.DockerFilePathARM64v8 = $"Tor/{image.Tag}/linuxarm64v8.Dockerfile";
-                    dockerInfo.GitLink = "https://github.com/btcpayserver/dockerfile-deps";
+                    dockerInfo.GitLink = "https://github.com/thoughtnetwork/dockerfile-deps";
                     dockerInfo.GitRef = $"Tor/{image.Tag}";
                     dockerInfo.SupportedByUs = true;
                     break;
@@ -402,14 +402,14 @@ namespace DockerFileBuildHelper
                     dockerInfo.DockerFilePath = $"Dash/{image.Tag}/linuxamd64.Dockerfile";
                     dockerInfo.DockerFilePathARM32v7 = $"Dash/{image.Tag}/linuxarm32v7.Dockerfile";
                     dockerInfo.DockerFilePathARM64v8 = $"Dash/{image.Tag}/linuxarm64v8.Dockerfile";
-                    dockerInfo.GitLink = "https://github.com/btcpayserver/dockerfile-deps";
+                    dockerInfo.GitLink = "https://github.com/thoughtnetwork/dockerfile-deps";
                     dockerInfo.GitRef = $"Dash/{image.Tag}";
                     break;
                     case "thought":
                         dockerInfo.DockerFilePath = $"Thought/{image.Tag}/linuxamd64.Dockerfile";
                         dockerInfo.DockerFilePathARM32v7 = $"Thought/{image.Tag}/linuxarm32v7.Dockerfile";
                         dockerInfo.DockerFilePathARM64v8 = $"Thought/{image.Tag}/linuxarm64v8.Dockerfile";
-                        dockerInfo.GitLink = "https://github.com/btcpayserver/dockerfile-deps";
+                        dockerInfo.GitLink = "https://github.com/thoughtnetwork/dockerfile-deps";
                         dockerInfo.GitRef = $"Thought/{image.Tag}";
                         break;
                 case "btcpayserver":
@@ -472,7 +472,7 @@ namespace DockerFileBuildHelper
                 case "litecoin":
                     dockerInfo.DockerFilePath = $"Litecoin/{NoRevision(image.Tag)}/linuxamd64.Dockerfile";
                     dockerInfo.DockerFilePathARM32v7 = $"Litecoin/{NoRevision(image.Tag)}/linuxarm32v7.Dockerfile";
-                    dockerInfo.GitLink = "https://github.com/btcpayserver/dockerfile-deps";
+                    dockerInfo.GitLink = "https://github.com/thoughtnetwork/dockerfile-deps";
                     dockerInfo.GitRef = $"Litecoin/{image.Tag}";
                     break;
                 case "docker-monacoin":
