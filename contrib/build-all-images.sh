@@ -779,11 +779,11 @@ docker build -f "$DOCKERFILE" -t "romanornr/docker-viacoin:0.15.2" .
 cd - && cd ..
 
 # Build thought
-# https://raw.githubusercontent.com/btcpayserver/dockerfile-deps/Thought/0.18.0/Thought/0.18.0/linuxamd64.Dockerfile
+# https://raw.githubusercontent.com/btcpayserver/dockerfile-deps/Thought/0.18.0/linuxamd64.Dockerfile
 DOCKERFILE="Thought/0.18.0/linuxamd64.Dockerfile"
-# https://raw.githubusercontent.com/btcpayserver/dockerfile-deps/Thought/0.18.0/Thought/0.18.0/linuxarm32v7.Dockerfile
+# https://raw.githubusercontent.com/btcpayserver/dockerfile-deps/Thought/0.18.0/linuxarm32v7.Dockerfile
 [[ "$(uname -m)" == "armv7l" ]] && DOCKERFILE="Thought/0.18.0/linuxarm32v7.Dockerfile"
-# https://raw.githubusercontent.com/btcpayserver/dockerfile-deps/Thought/0.18.0/Thought/0.18.0/linuxarm64v8.Dockerfile
+# https://raw.githubusercontent.com/btcpayserver/dockerfile-deps/Thought/0.18.0/linuxarm64v8.Dockerfile
 [[ "$(uname -m)" == "aarch64" ]] && DOCKERFILE="Thought/0.18.0/linuxarm64v8.Dockerfile"
 echo "Building andyjh122/thought:0.18.0"
 git clone https://github.com/thoughtnetwork/dockerfile-deps thought
