@@ -4,7 +4,7 @@ services:
   thoughtd:
       restart: unless-stopped
       container_name: btcpayserver_thoughtd
-      image: btcpayserver/Thought:0.18.0
+      image: andyjh122/thought:0.18.0
       environment:
         BITCOIN_EXTRA_ARGS: |
           ${NBITCOIN_NETWORK:-regtest}=1
