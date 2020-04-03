@@ -26,6 +26,6 @@ services:
   btcpayserver:
       environment:
         BTCPAY_CHAINS: "tht"
-        BTCPAY_THOUGHTEXPLORERURL: http://nbxplorer:32838/
+        BTCPAY_THTEXPLORERURL: http://nbxplorer:32838/
 volumes:
   thought_datadir:
