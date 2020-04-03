@@ -18,9 +18,9 @@ services:
         - "thought_datadir:/data"
   nbxplorer:
       environment:
-        NBXPLORER_CHAINS: "thought"
-        NBXPLORER_THOUGHTRPCURL: http://thoughtd:10617/
-        NBXPLORER_THOUGHTNODEENDPOINT: thoughtd:10618
+        NBXPLORER_CHAINS: "tht"
+        NBXPLORER_THTRPCURL: http://thoughtd:10617/
+        NBXPLORER_THTNODEENDPOINT: thoughtd:10618
       volumes:
         - "thought_datadir:/root/.thoughtcore"
   btcpayserver:

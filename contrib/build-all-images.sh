@@ -7,7 +7,7 @@ DOCKERFILE=""
 
 # Build docker-compose-generator
 # https://raw.githubusercontent.com/btcpayserver/btcpayserver-docker/dcg-latest/docker-compose-generator/linuxamd64.Dockerfile
-DOCKERFILE="docker-compose-generator/linuxamd64.Dockerfile"
+DOCKERFILE="linuxamd64.Dockerfile"
 # https://raw.githubusercontent.com/btcpayserver/btcpayserver-docker/dcg-latest/docker-compose-generator/linuxarm32v7.Dockerfile
 [[ "$(uname -m)" == "armv7l" ]] && DOCKERFILE="docker-compose-generator/linuxarm32v7.Dockerfile"
 # https://raw.githubusercontent.com/btcpayserver/btcpayserver-docker/dcg-latest/docker-compose-generator/linuxarm64v8.Dockerfile
@@ -15,8 +15,9 @@ DOCKERFILE="docker-compose-generator/linuxamd64.Dockerfile"
 echo "Building btcpayserver/docker-compose-generator:latest"
 git clone https://github.com/thoughtnetwork/btcpayserver-docker docker-compose-generator
 cd docker-compose-generator
-git checkout dcg-latest
-cd "$(dirname $DOCKERFILE)"
+git checkout master
+#cd "$(dirname $DOCKERFILE)"
+cd docker-compose-generator
 docker build -f "$DOCKERFILE" -t "btcpayserver/docker-compose-generator:latest" .
 cd - && cd ..
 
@@ -463,7 +464,7 @@ git clone https://github.com/thoughtnetwork/nbxplorer nbxplorer
 cd nbxplorer
 git checkout v2.1.14
 cd "$(dirname $DOCKERFILE)"
-docker build -f "$DOCKERFILE" -t "nicolasdorier/nbxplorer:2.1.14" .
+docker build -f "$DOCKERFILE" -t "andyjh122/nbxplorer:2.1.14" .
 cd - && cd ..
 
 
